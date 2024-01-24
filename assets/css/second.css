@@ -1,0 +1,48 @@
+.sliderContainer {
+    height: 650px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 500px 600px;
+    margin: 50px 0;
+}
+
+
+
+
+.sliderButtons {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.sliderButtons > button {
+    margin-bottom: 3%;  
+    font-size: 1rem;
+    text-align: left;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+button:hover {
+    color: red;
+}
+
+.slide {
+    display: none;
+}
+.slide > h1 {
+    margin-bottom: 2%;
+}
+
+.slide > p {
+    font-size: 1.1rem;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slider-btn.red {
+    color: red;
+}
